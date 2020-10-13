@@ -1,7 +1,7 @@
 탈퇴한 유저 찾기 : 
 SELECT user.name, user.email, suspended.created_at 
 FROM user, suspended 
-WHERE suspended.expired_at>NOW()
+WHERE suspended.expired_at<NOW()
 
 
 채팅 비중 출력 : 
